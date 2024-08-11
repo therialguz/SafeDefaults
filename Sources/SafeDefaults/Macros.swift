@@ -7,5 +7,5 @@
 
 import Foundation
 
-@freestanding(expression)
-public macro safeDefault<Value>(_ key: String, defaultValue: Value) -> String = #externalMacro(module: "SafeDefaultsMacros", type: "SafeDefaultMacro")
+//@freestanding(expression)
+//public macro safeDefault<Value>(_ key: String, defaultValue: Value) -> String = #externalMacro(module: "SafeDefaultsMacros", type: "SafeDefaultMacro")
