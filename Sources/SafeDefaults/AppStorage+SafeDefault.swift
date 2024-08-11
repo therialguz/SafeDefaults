@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension AppStorage {
+public extension AppStorage {
     init<Default: SafeDefault>(_ safeDefault: Default.Type) where Value == Bool, Default.Value == Value {
         self.init(wrappedValue: safeDefault.defaultValue, safeDefault.key, store: safeDefault.store)
     }
