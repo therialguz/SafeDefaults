@@ -21,6 +21,10 @@ public extension SafeDefault {
     static var store: UserDefaults { UserDefaults.standard }
 }
 
+public extension SafeDefault where Value: ExpressibleByNilLiteral {
+    static var defaultValue: Value { nil }
+}
+
 // MARK: Get Value
 public extension SafeDefault {
     static func getValue() -> Value where Value == Bool {
